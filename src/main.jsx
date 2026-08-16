@@ -1,8 +1,10 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
+import App from './App.jsx'
+import './styles.css'
 
-function App() {
-  return <div><h1>Radar Electoral</h1><p>Entorno inicial listo.</p></div>
-}
-
-createRoot(document.getElementById('root')).render(<App />)
+createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
